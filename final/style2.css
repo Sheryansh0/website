@@ -1,0 +1,434 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* This separates the text and image */
+  align-items: center; /* This vertically centers the items in the container */
+  height: 100%;
+}
+
+.text-content {
+  /* If you want to ensure the text takes up a certain amount of space */
+  flex-basis: 50%; /* Adjust this as needed */
+  padding: 20px; /* Add padding as necessary */
+  box-sizing: border-box; /* This ensures padding is included in width */
+  margin-left: 200px;
+}
+
+.side-image {
+  width: auto; /* Maintain the aspect ratio of the image */
+  height: 100%; /* Adjust height as necessary */
+  max-width: 50%; /* Adjust maximum width as necessary */
+}
+
+.Heading
+{
+  font-size: 100px;
+  margin-bottom: 0px;
+  margin-top: 0%;
+}
+.caption
+{
+  font-size: 25px;
+  margin-top: 0%;
+  margin-left: 25px;
+}
+
+.button1 {
+  display: block;
+  width: 200px;
+  padding: 10px 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 10px auto;
+  margin-top: 100px;
+  font-size: 25px;
+  color: white;
+  background-color: #007bff;
+  border: black;
+  border-width: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.button1:hover {
+  background-color: #0056b3;
+}
+
+
+.features-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 0px ;
+}
+
+.feature {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px; /* Adjust the width as needed */
+  margin: 0 5px;
+
+  padding: 20px; /* Add padding */
+  background-color: #6e0707; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 20px;
+
+}
+
+.feature-icon {
+  width: 50px; /* Adjust icon size as needed */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+
+
+.feature-title {
+  font-size: 18px; /* Adjust font size as needed */
+  text-align: center;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.feature p {
+  font-size: 14px; /* Adjust font size as needed */
+  text-align: center;
+  color: black; /* Adjust text color as needed */
+}
+
+.feature:first-child {
+  margin-right: 0px; 
+  margin-left: 20px;/* Adjust the right margin */
+  background-color: #F9F871;
+
+}
+
+
+.feature:last-child {
+  margin-left: 0px; 
+  margin-right: 20px
+  ;/* Adjust the left margin */
+  background-color : #FF9671;
+}
+
+.feature:nth-child(2) {
+  margin-left: 0px;
+  margin-right: 0px; /* Adjust left and right margins */
+  background-color: #FFC75F;
+}
+
+.why-ydhya-container {
+  text-align: center; /* Centers the text horizontally */
+  margin-bottom: 20px; /* Adds some space below the heading */
+}
+
+.why-ydhya-title {
+  font-size: 36px; /* Large font size for the heading */
+  color: #333; /* Dark color for the text */
+  /* You can add more styling such as font-weight, letter-spacing, etc. */
+}
+
+.feature:hover {
+  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Larger shadow for a 'lifted' effect */
+  /* Optionally, you can also change the border or scale the card a bit */
+  /* border: 1px solid #007bff; */ /* Change border color on hover */
+  /* transform: scale(1.05); */ /* Scale the card to 105% of its original size */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  
+}
+
+.need-ydhya-container {
+  text-align: center; /* Centers the text horizontally */
+  margin-top: 40px; /* Adds some space above the heading */
+  margin-bottom: 20px; /* Adds some space below the heading */
+}
+
+.need-ydhya-title {
+  text-align: center; 
+  font-size: 36px; /* Large font size for the heading */
+  color: #333; /* Dark color for the text */
+  /* You can add more styling such as font-weight, letter-spacing, etc. */
+}
+.problem{
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+}
+
+.problem-title{
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+.problem-para{
+  font-size: large;
+  align-items: normal;
+  text-decoration: solid;
+
+}
+.solution-container{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.solution{
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+.solution-para{
+  font-size: large;
+  align-items: normal;
+}
+ .about-us{ 
+   
+    display: flex;
+    padding: 0 35px;
+    justify-content: center;
+    min-height: 100vh;
+    background: none;
+  }
+
+ 
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+  top : 180px;
+}
+.wrapper i:last-child{
+  right: -22px;
+  top : 180px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265df2;
+}
+.about-us-title{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+}
+.problem, .sucide-container, .solution-container, .need-ydhya-container {
+  margin-left: 200px;
+  height: 450px;
+  width: 1000px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.problem-image, .sucide-image, .solution-image, .need-ydhya-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.problem-title, .sucide-title, .solution-title, .need-ydhya-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.problem-para, .sucide-para, .solution-para, .Need-ydhya-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: justify;
+}
+.connect{
+  border: 1px solid #007bff;
+  background: #007bff;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.connect:hover{
+  background: white;
+  color: #007bff;
+
+}
+.problem:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Larger shadow for a 'lifted' effect */
+  /* Optionally, you can also change the border or scale the card a bit */
+  /* border: 1px solid #007bff; */ /* Change border color on hover */
+  /* transform: scale(1.05); */ /* Scale the card to 105% of its original size */
+  transition: background-color 0.4s, box-shadow 0.3s; 
+  color: white;
+  background: #d0bdf4 ;
+
+}
+.sucide-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Larger shadow for a 'lifted' effect */
+  /* Optionally, you can also change the border or scale the card a bit */
+  /* border: 1px solid #007bff; */ /* Change border color on hover */
+  /* transform: scale(1.05); */ /* Scale the card to 105% of its original size */
+  transition: background-color 0.4s, box-shadow 0.3s; 
+  color: white;
+  background : #f75990;
+
+}
+.solution-container:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Larger shadow for a 'lifted' effect */
+  /* Optionally, you can also change the border or scale the card a bit */
+  /* border: 1px solid #007bff; */ /* Change border color on hover */
+  /* transform: scale(1.05); */ /* Scale the card to 105% of its original size */
+  transition: background-color 0.4s, box-shadow 0.3s; 
+  color: white;
+  background: #ffa8B6;
+
+}
+
+.need-ydhya-container:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1); /* Larger shadow for a 'lifted' effect */
+  /* Optionally, you can also change the border or scale the card a bit */
+  /* border: 1px solid #007bff; */ /* Change border color on hover */
+  /* transform: scale(1.05); */ /* Scale the card to 105% of its original size */
+  transition: background-color 0.4s, box-shadow 0.3s; 
+  color: white;
+  background: #a28089;
+
+}

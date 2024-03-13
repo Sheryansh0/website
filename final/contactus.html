@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Us-YDHYA</title>
+    <link rel="stylesheet" href="contactus.css">
+
+
+
+  </head>
+  <body>
+
+    <div class="container">
+      <form onsubmit="sendEmail()" ; reset() ; return false ;>
+        <h3> Contact Us</h3>
+        <input type="text"  id="name" placeholder="Enter Your Name" required>
+        <input type="email"  id="email" placeholder="Enter your Email Id" required>
+        <input type="text"  id="phonenumber" placeholder="ENter Phone Number" >
+        <textarea  id="message"  rows="5" placeholder="How can we help You"></textarea>
+        <button type="submit"> Submit</button>
+        
+      </form>
+
+    </div>
+    
+
+
+
+
+
+  <script src=" https://smtpjs.com/v3/smtp.js">  </script>
+  <script> 
+
+  function sendEmail()
+  {
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "naniwork8@gmail.com",
+    Password : "Nani@1512",
+    To : 'naninalli02@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Contact for Enquiry",
+    Body : "And this is the body"
+  }).then(
+  message => alert(message));
+
+  }
+  </script>
+  
+  </body>
+</html>
